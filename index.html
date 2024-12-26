@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2> 
+        <form action="GET">
+            <div class="amount">
+                <label for="amount"><p>Enter the Amount:</p></label> 
+                <input type="text" value="100" id="amount" name="amount"/>
+            </div>
+            <div class="dropdown">
+                <div class="fromCurrency">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="fromCurrency" id="fromCurrency">
+                            
+                        </select>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-right-left"></i>
+
+                <div class="toCurrency">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="toCurrency" id="toCurrency">
+                          
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="msg">
+                <p id="msg"> 1 USD = 80 INR</p>
+            </div>
+            <button type="submit">Get Exchange</button>
+        </form>
+        <div class="foot">
+            <div class="footer">
+                <p class="footer-msg">
+                    Made with <i class="fa-solid fa-heart"></i> by <a href="https://www.linkedin.com/in/smnsohail"> Sohail</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
