@@ -101,9 +101,13 @@ form input{
 }
 
 .msg{
-    margin: 2rem 0 2rem 0;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin: 2rem 0 0.3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #msg{
+        font-size: 0.9rem;
+    }
 }
 
 form button{
@@ -116,12 +120,10 @@ form button{
     justify-content: center;
     align-items: center;
 }
-form button:hover {
-    background-color: #7FB069 ;
-    border: 2px solid #D36135;
-    color: #02020B;
+/* form button:hover {
+    background-color: #D36135 ;
     font-weight: bolder;
-}
+} */
 
 
 .foot{
@@ -142,7 +144,4 @@ form button:hover {
         }
     }
 
-}
-footer>p::view-transition{
-    transition: all 0.5s ease;
 }
